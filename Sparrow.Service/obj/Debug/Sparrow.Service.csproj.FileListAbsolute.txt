@@ -1,0 +1,13 @@
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\Sparrow.Service.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\Sparrow.Service.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\Sparrow.Domain.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\Sparrow.Repository.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\EntityFramework.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\Sparrow.Helpers.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\Sparrow.Domain.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\Sparrow.Repository.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\EntityFramework.xml
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\bin\Debug\Sparrow.Helpers.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\obj\Debug\Sparrow.Service.csprojResolveAssemblyReference.cache
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\obj\Debug\Sparrow.Service.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Service\obj\Debug\Sparrow.Service.pdb

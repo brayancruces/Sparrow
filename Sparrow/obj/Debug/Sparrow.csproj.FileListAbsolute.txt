@@ -13,3 +13,18 @@ c:\users\desarrollo rm\documents\visual studio 2015\Projects\Sparrow\Sparrow\obj
 c:\users\desarrollo rm\documents\visual studio 2015\Projects\Sparrow\Sparrow\obj\Debug\Sparrow.FormInventarioEditItem.resources
 c:\users\desarrollo rm\documents\visual studio 2015\Projects\Sparrow\Sparrow\obj\Debug\Sparrow.FormInventarioStock.resources
 c:\users\desarrollo rm\documents\visual studio 2015\Projects\Sparrow\Sparrow\obj\Debug\Sparrow.FormLog.resources
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\bin\Debug\Sparrow.exe.config
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.exe
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\bin\Debug\Sparrow.exe
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\bin\Debug\Sparrow.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.csprojResolveAssemblyReference.cache
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.FormDashboard.resources
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.FormInventario.resources
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.FormInventarioCosto.resources
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.FormInventarioEditItem.resources
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.FormInventarioStock.resources
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.FormLog.resources
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.Properties.Resources.resources
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.csproj.GenerateResource.Cache
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow\obj\Debug\Sparrow.FormLogin.resources

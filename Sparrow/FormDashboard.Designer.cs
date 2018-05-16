@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelBienvenido = new System.Windows.Forms.Label();
             this.buttonInventory = new System.Windows.Forms.Button();
             this.buttonLog = new System.Windows.Forms.Button();
             this.buttonLogout = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelRol = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelBienvenido
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(151, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bienvenido usuario";
+            this.labelBienvenido.AutoSize = true;
+            this.labelBienvenido.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBienvenido.Location = new System.Drawing.Point(201, 11);
+            this.labelBienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBienvenido.Name = "labelBienvenido";
+            this.labelBienvenido.Size = new System.Drawing.Size(259, 40);
+            this.labelBienvenido.TabIndex = 0;
+            this.labelBienvenido.Text = "Bienvenido usuario";
             // 
             // buttonInventory
             // 
             this.buttonInventory.BackColor = System.Drawing.Color.MediumTurquoise;
             this.buttonInventory.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonInventory.Location = new System.Drawing.Point(88, 92);
+            this.buttonInventory.Location = new System.Drawing.Point(117, 113);
+            this.buttonInventory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonInventory.Name = "buttonInventory";
-            this.buttonInventory.Size = new System.Drawing.Size(100, 77);
+            this.buttonInventory.Size = new System.Drawing.Size(133, 95);
             this.buttonInventory.TabIndex = 1;
             this.buttonInventory.Text = "Inventario y Stocks";
             this.buttonInventory.UseVisualStyleBackColor = false;
@@ -61,9 +63,10 @@
             // 
             this.buttonLog.BackColor = System.Drawing.Color.BlueViolet;
             this.buttonLog.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonLog.Location = new System.Drawing.Point(301, 92);
+            this.buttonLog.Location = new System.Drawing.Point(401, 113);
+            this.buttonLog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonLog.Name = "buttonLog";
-            this.buttonLog.Size = new System.Drawing.Size(100, 77);
+            this.buttonLog.Size = new System.Drawing.Size(133, 95);
             this.buttonLog.TabIndex = 2;
             this.buttonLog.Text = "Registro de actividades";
             this.buttonLog.UseVisualStyleBackColor = false;
@@ -71,34 +74,39 @@
             // 
             // buttonLogout
             // 
-            this.buttonLogout.Location = new System.Drawing.Point(197, 269);
+            this.buttonLogout.Location = new System.Drawing.Point(263, 331);
+            this.buttonLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(90, 23);
+            this.buttonLogout.Size = new System.Drawing.Size(120, 28);
             this.buttonLogout.TabIndex = 4;
             this.buttonLogout.Text = "Cerrar Sesión";
             this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
-            // label2
+            // labelRol
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 224);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Rol: Administrador";
+            this.labelRol.AutoSize = true;
+            this.labelRol.Location = new System.Drawing.Point(17, 276);
+            this.labelRol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRol.Name = "labelRol";
+            this.labelRol.Size = new System.Drawing.Size(118, 16);
+            this.labelRol.TabIndex = 5;
+            this.labelRol.Text = "Rol: Administrador";
             // 
             // FormDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 304);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(640, 374);
+            this.Controls.Add(this.labelRol);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.buttonLog);
             this.Controls.Add(this.buttonInventory);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelBienvenido);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormDashboard";
             this.Text = "Sparrow ";
+            this.Load += new System.EventHandler(this.FormDashboard_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,10 +114,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelBienvenido;
         private System.Windows.Forms.Button buttonInventory;
         private System.Windows.Forms.Button buttonLog;
         private System.Windows.Forms.Button buttonLogout;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelRol;
     }
 }

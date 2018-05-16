@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Sparrow.Domain;
+using Sparrow.Helpers;
+using Sparrow.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +15,10 @@ namespace Sparrow
 {
     public partial class FormDashboard : Form
     {
+        IUsuarioService usuarioService;
         public FormDashboard()
         {
+            usuarioService = new UsuarioService();
             InitializeComponent();
         }
 
@@ -43,6 +48,20 @@ namespace Sparrow
             this.Show();
 
 
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            SessionHelper.userID = null;
+            this.Close();
+        }
+
+        private void FormDashboard_Load(object sender, EventArgs e)
+        {
+            Usuario usuario = new Usuario();
+            usuario = usuarioService.ObtenerUsuario(SessionHelper.userID.Value);
+            this.labelBienvenido.Text = "Bienvenido " + usuario.nombre + " " + usuario.apellido;
+            this.labelRol.Text = "Rol: " + usuario.Rol.nombre;
         }
     }
 }

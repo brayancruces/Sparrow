@@ -1,0 +1,10 @@
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\bin\Debug\Sparrow.Domain.dll.config
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\bin\Debug\Sparrow.Domain.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\bin\Debug\Sparrow.Domain.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\bin\Debug\EntityFramework.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\bin\Debug\EntityFramework.xml
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\obj\Debug\Sparrow.Domain.csprojResolveAssemblyReference.cache
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\obj\Debug\Sparrow.Domain.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\obj\Debug\Sparrow.Domain.pdb

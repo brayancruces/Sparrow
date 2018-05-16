@@ -1,0 +1,5 @@
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\bin\Debug\Sparrow.Helpers.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\bin\Debug\Sparrow.Helpers.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.csprojResolveAssemblyReference.cache
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.pdb
