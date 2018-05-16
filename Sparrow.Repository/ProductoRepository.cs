@@ -51,28 +51,17 @@ namespace Sparrow.Repository
             return lista;
         }
 
-        public IEnumerable<object> ListarProductos(bool ingredientes, bool elaborados, bool unitarios, bool alerta)
+
+        public IEnumerable<object> ListarProductos(string ingredientes, string elaborados, string unitarios, bool alerta)
         {
-            var lista = context.Producto.Where(x => x.Tipo.nombre == "Brayan");
-            if (ingredientes)
-            {
-                lista.Concat(context.Producto.Where(x => x.Tipo.nombre == "Ingredientes"));
-            }
-            if (elaborados)
-            {
-                lista.Concat(context.Producto.Where(x => x.Tipo.nombre == "Productos Elaborados"));
-            }
-            if (unitarios)
-            {
-                lista.Concat(context.Producto.Where(x => x.Tipo.nombre == "Productos Unitarios"));
-            }
+            var lista = context.Producto.Where(x => x.Tipo.nombre == ingredientes || x.Tipo.nombre == elaborados || x.Tipo.nombre == unitarios);
             if (alerta)
             {
-                lista.Concat(context.Producto.Where(x => x.stock <= x.alertaStock));
+                lista = lista.Where(x => x.stock <= x.alertaStock);
             }
             else
             {
-                lista.Concat(context.Producto.Where(x => x.stock > x.alertaStock));
+                lista = lista.Where(x => x.stock >= x.alertaStock);
             }
             return lista.Select(x => new
             {
@@ -81,9 +70,14 @@ namespace Sparrow.Repository
                 nombre = x.nombre,
                 medida = x.Medida.nombre,
                 stock = x.stock,
-                alertaStock = x.stock <= x.alertaStock ? true: false,
+                alertaStock = x.stock <= x.alertaStock ? true : false,
                 costoUnitario = x.costoUnitario
             }).ToList();
+        }
+
+        public Producto obtenerProducto(int id)
+        {
+            return context.Producto.FirstOrDefault(x => x.Id == id);
         }
     }
 }

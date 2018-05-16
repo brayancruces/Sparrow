@@ -10,9 +10,10 @@ namespace Sparrow.Repository
     public interface IProductoRepository
     {
         IEnumerable<Object> ListarProductos();
-        IEnumerable<Object> ListarProductos(bool ingredientes, bool elaborados, bool unitarios, bool alerta);
+        IEnumerable<Object> ListarProductos(string ingredientes, string elaborados, string unitarios, bool alarma);
         void agregarProducto(Producto producto);
         void editarProducto(Producto producto);
         void eliminarProducto(int ID);
+        Producto obtenerProducto(int id);
     }
 }

@@ -17,7 +17,7 @@ namespace Sparrow.Service
         }
         public void agregarProducto(Producto producto)
         {
-            repository.agregarProducto(producto;
+            repository.agregarProducto(producto);
         }
 
         public void editarProducto(Producto producto)
@@ -35,9 +35,14 @@ namespace Sparrow.Service
             return repository.ListarProductos();
         }
 
-        public IEnumerable<object> ListarProductos(bool ingredientes, bool elaborados, bool unitarios, bool alerta)
+        public IEnumerable<object> ListarProductos(string ingredientes, string elaborados, string unitarios, bool alarma)
         {
-            return repository.ListarProductos(ingredientes, elaborados, unitarios, alerta);
+            return repository.ListarProductos(ingredientes, elaborados, unitarios, alarma);
+        }
+
+        public Producto obtenerProducto(int id)
+        {
+            return repository.obtenerProducto(id);
         }
     }
 }

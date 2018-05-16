@@ -1,16 +1,3 @@
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Repository.dll
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Repository.pdb
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\EntityFramework.dll
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Domain.dll
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Helpers.dll
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Domain.pdb
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Helpers.pdb
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\EntityFramework.xml
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\obj\Debug\Sparrow.Repository.csprojResolveAssemblyReference.cache
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\obj\Debug\Sparrow.Repository.dll
-C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\obj\Debug\Sparrow.Repository.pdb
 C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Repository.dll
 C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Repository.pdb
 C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Repository\bin\Debug\EntityFramework.dll
@@ -24,3 +11,16 @@ C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Traba
 C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Repository\obj\Debug\Sparrow.Repository.csprojResolveAssemblyReference.cache
 C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Repository\obj\Debug\Sparrow.Repository.dll
 C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Repository\obj\Debug\Sparrow.Repository.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Repository.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Repository.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\EntityFramework.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Domain.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Helpers.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Domain.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\Sparrow.Helpers.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\EntityFramework.xml
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\obj\Debug\Sparrow.Repository.csprojResolveAssemblyReference.cache
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\obj\Debug\Sparrow.Repository.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Repository\obj\Debug\Sparrow.Repository.pdb
