@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Medida.cs">
+      <DependentUpon>SparrowModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.cs">
+      <DependentUpon>SparrowModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rol.cs">
       <DependentUpon>SparrowModel.tt</DependentUpon>
@@ -69,6 +75,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SparrowModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo.cs">
+      <DependentUpon>SparrowModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">
       <DependentUpon>SparrowModel.tt</DependentUpon>

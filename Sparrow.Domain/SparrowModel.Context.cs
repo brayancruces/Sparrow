@@ -27,5 +27,8 @@ namespace Sparrow.Domain
     
         public virtual DbSet<Rol> Rol { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<Medida> Medida { get; set; }
+        public virtual DbSet<Producto> Producto { get; set; }
+        public virtual DbSet<Tipo> Tipo { get; set; }
     }
 }

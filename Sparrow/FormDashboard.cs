@@ -24,8 +24,6 @@ namespace Sparrow
 
         private void buttonInventory_Click(object sender, EventArgs e)
         {
-
-
             FormInventario formInventario = new FormInventario();
 
             // And  others 

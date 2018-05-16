@@ -8,6 +8,11 @@
         <EntityTypeShape EntityType="SparrowDBModel.Rol" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="SparrowDBModel.Usuario" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="SparrowDBModel.FK_Usuario_Rol" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SparrowDBModel.Medida" Width="1.5" PointX="0.75" PointY="8.375" />
+        <EntityTypeShape EntityType="SparrowDBModel.Producto" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="SparrowDBModel.Tipo" Width="1.5" PointX="0.75" PointY="5.375" />
+        <AssociationConnector Association="SparrowDBModel.FK_Producto_Medida" />
+        <AssociationConnector Association="SparrowDBModel.FK_Producto_Tipo" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
