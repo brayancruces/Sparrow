@@ -53,7 +53,7 @@ namespace Sparrow.Repository
 
         public IEnumerable<object> ListarProductos(bool ingredientes, bool elaborados, bool unitarios, bool alerta)
         {
-            IEnumerable<object> lista = null;
+            var lista = context.Producto.Where(x => x.Tipo.nombre == "Brayan");
             if (ingredientes)
             {
                 lista.Concat(context.Producto.Where(x => x.Tipo.nombre == "Ingredientes"));
@@ -74,7 +74,16 @@ namespace Sparrow.Repository
             {
                 lista.Concat(context.Producto.Where(x => x.stock > x.alertaStock));
             }
-            return lista;
+            return lista.Select(x => new
+            {
+                Id = x.Id,
+                tipo = x.Tipo.nombre,
+                nombre = x.nombre,
+                medida = x.Medida.nombre,
+                stock = x.stock,
+                alertaStock = x.stock <= x.alertaStock ? true: false,
+                costoUnitario = x.costoUnitario
+            }).ToList();
         }
     }
 }
