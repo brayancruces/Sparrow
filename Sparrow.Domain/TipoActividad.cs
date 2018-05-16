@@ -12,16 +12,18 @@ namespace Sparrow.Domain
     using System;
     using System.Collections.Generic;
     
-    public partial class Producto
+    public partial class TipoActividad
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public TipoActividad()
+        {
+            this.Actividad = new HashSet<Actividad>();
+        }
+    
         public int Id { get; set; }
         public string nombre { get; set; }
-        public int medidaId { get; set; }
-        public int tipoId { get; set; }
-        public double stock { get; set; }
-        public Nullable<double> alertaStock { get; set; }
     
-        public virtual Medida Medida { get; set; }
-        public virtual Tipo Tipo { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Actividad> Actividad { get; set; }
     }
 }

@@ -14,6 +14,12 @@ namespace Sparrow.Domain
     
     public partial class Usuario
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Usuario()
+        {
+            this.Actividad = new HashSet<Actividad>();
+        }
+    
         public int Id { get; set; }
         public string nombreUsuario { get; set; }
         public string contraseña { get; set; }
@@ -22,5 +28,7 @@ namespace Sparrow.Domain
         public int rolId { get; set; }
     
         public virtual Rol Rol { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Actividad> Actividad { get; set; }
     }
 }

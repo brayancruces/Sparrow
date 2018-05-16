@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormInventarioStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventarioStock.Designer.cs">
+      <DependentUpon>FormInventarioStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,23 +76,11 @@
     <Compile Include="FormInventario.Designer.cs">
       <DependentUpon>FormInventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormInventarioCosto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInventarioCosto.Designer.cs">
-      <DependentUpon>FormInventarioCosto.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormInventarioEditItem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormInventarioEditItem.Designer.cs">
       <DependentUpon>FormInventarioEditItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormInventarioStock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInventarioStock.Designer.cs">
-      <DependentUpon>FormInventarioStock.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLog.cs">
       <SubType>Form</SubType>
@@ -96,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormInventarioStock.resx">
+      <DependentUpon>FormInventarioStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,14 +102,8 @@
     <EmbeddedResource Include="FormInventario.resx">
       <DependentUpon>FormInventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInventarioCosto.resx">
-      <DependentUpon>FormInventarioCosto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormInventarioEditItem.resx">
       <DependentUpon>FormInventarioEditItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormInventarioStock.resx">
-      <DependentUpon>FormInventarioStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLog.resx">
       <DependentUpon>FormLog.cs</DependentUpon>

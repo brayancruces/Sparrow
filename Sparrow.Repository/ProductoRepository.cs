@@ -45,8 +45,7 @@ namespace Sparrow.Repository
                 nombre = x.nombre,
                 medida = x.Medida.nombre,
                 stock = x.stock,
-                alertaStock = x.stock <= x.alertaStock ? true: false,
-                costoUnitario = x.costoUnitario
+                alertaStock = x.stock <= x.alertaStock ? true: false
             }).ToList();
             return lista;
         }
@@ -70,8 +69,7 @@ namespace Sparrow.Repository
                 nombre = x.nombre,
                 medida = x.Medida.nombre,
                 stock = x.stock,
-                alertaStock = x.stock <= x.alertaStock ? true : false,
-                costoUnitario = x.costoUnitario
+                alertaStock = x.stock <= x.alertaStock ? true : false
             }).ToList();
         }
 

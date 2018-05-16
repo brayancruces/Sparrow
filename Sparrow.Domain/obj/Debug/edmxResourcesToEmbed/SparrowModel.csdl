@@ -19,6 +19,7 @@
     <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="rolId" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Rol" Relationship="Self.FK_Usuario_Rol" FromRole="Usuario" ToRole="Rol" />
+    <NavigationProperty Name="Actividad" Relationship="SparrowDBModel.FK_Actividad_Usuario" FromRole="Usuario" ToRole="Actividad" />
   </EntityType>
   <Association Name="FK_Usuario_Rol">
     <End Role="Rol" Type="Self.Rol" Multiplicity="1" />
@@ -50,6 +51,16 @@
       <End Role="Tipo" EntitySet="Tipo" />
       <End Role="Producto" EntitySet="Producto" />
     </AssociationSet>
+    <EntitySet Name="Actividad" EntityType="SparrowDBModel.Actividad" />
+    <EntitySet Name="TipoActividad" EntityType="SparrowDBModel.TipoActividad" />
+    <AssociationSet Name="FK_Actividad_TipoActividad" Association="SparrowDBModel.FK_Actividad_TipoActividad">
+      <End Role="TipoActividad" EntitySet="TipoActividad" />
+      <End Role="Actividad" EntitySet="Actividad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Actividad_Usuario" Association="SparrowDBModel.FK_Actividad_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Actividad" EntitySet="Actividad" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Medida">
     <Key>
@@ -71,7 +82,6 @@
     <Property Name="alertaStock" Type="Double" />
     <NavigationProperty Name="Medida" Relationship="SparrowDBModel.FK_Producto_Medida" FromRole="Producto" ToRole="Medida" />
     <NavigationProperty Name="Tipo" Relationship="SparrowDBModel.FK_Producto_Tipo" FromRole="Producto" ToRole="Tipo" />
-    <Property Name="costoUnitario" Type="Double" Nullable="false" />
   </EntityType>
   <EntityType Name="Tipo">
     <Key>
@@ -102,6 +112,50 @@
       </Principal>
       <Dependent Role="Producto">
         <PropertyRef Name="tipoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Actividad">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tipoActividadId" Type="Int32" Nullable="false" />
+    <Property Name="usuarioId" Type="Int32" Nullable="false" />
+    <Property Name="nota" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TipoActividad" Relationship="SparrowDBModel.FK_Actividad_TipoActividad" FromRole="Actividad" ToRole="TipoActividad" />
+    <NavigationProperty Name="Usuario" Relationship="SparrowDBModel.FK_Actividad_Usuario" FromRole="Actividad" ToRole="Usuario" />
+    <Property Name="fechaHora" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="TipoActividad">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Actividad" Relationship="SparrowDBModel.FK_Actividad_TipoActividad" FromRole="TipoActividad" ToRole="Actividad" />
+  </EntityType>
+  <Association Name="FK_Actividad_TipoActividad">
+    <End Type="SparrowDBModel.TipoActividad" Role="TipoActividad" Multiplicity="1" />
+    <End Type="SparrowDBModel.Actividad" Role="Actividad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoActividad">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Actividad">
+        <PropertyRef Name="tipoActividadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Actividad_Usuario">
+    <End Type="SparrowDBModel.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="SparrowDBModel.Actividad" Role="Actividad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Actividad">
+        <PropertyRef Name="usuarioId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

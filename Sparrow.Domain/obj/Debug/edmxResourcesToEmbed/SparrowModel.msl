@@ -32,7 +32,6 @@
     <EntitySetMapping Name="Producto">
       <EntityTypeMapping TypeName="SparrowDBModel.Producto">
         <MappingFragment StoreEntitySet="Producto">
-          <ScalarProperty Name="costoUnitario" ColumnName="costoUnitario" />
           <ScalarProperty Name="alertaStock" ColumnName="alertaStock" />
           <ScalarProperty Name="stock" ColumnName="stock" />
           <ScalarProperty Name="tipoId" ColumnName="tipoId" />
@@ -45,6 +44,25 @@
     <EntitySetMapping Name="Tipo">
       <EntityTypeMapping TypeName="SparrowDBModel.Tipo">
         <MappingFragment StoreEntitySet="Tipo">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Actividad">
+      <EntityTypeMapping TypeName="SparrowDBModel.Actividad">
+        <MappingFragment StoreEntitySet="Actividad">
+          <ScalarProperty Name="fechaHora" ColumnName="fechaHora" />
+          <ScalarProperty Name="nota" ColumnName="nota" />
+          <ScalarProperty Name="usuarioId" ColumnName="usuarioId" />
+          <ScalarProperty Name="tipoActividadId" ColumnName="tipoActividadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoActividad">
+      <EntityTypeMapping TypeName="SparrowDBModel.TipoActividad">
+        <MappingFragment StoreEntitySet="TipoActividad">
           <ScalarProperty Name="nombre" ColumnName="nombre" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>

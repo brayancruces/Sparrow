@@ -51,6 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actividad.cs">
+      <DependentUpon>SparrowModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Medida.cs">
       <DependentUpon>SparrowModel.tt</DependentUpon>
     </Compile>
@@ -77,6 +80,9 @@
       <DependentUpon>SparrowModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Tipo.cs">
+      <DependentUpon>SparrowModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoActividad.cs">
       <DependentUpon>SparrowModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">

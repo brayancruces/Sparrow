@@ -30,5 +30,7 @@ namespace Sparrow.Domain
         public virtual DbSet<Medida> Medida { get; set; }
         public virtual DbSet<Producto> Producto { get; set; }
         public virtual DbSet<Tipo> Tipo { get; set; }
+        public virtual DbSet<Actividad> Actividad { get; set; }
+        public virtual DbSet<TipoActividad> TipoActividad { get; set; }
     }
 }

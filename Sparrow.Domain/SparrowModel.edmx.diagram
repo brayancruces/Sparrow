@@ -13,6 +13,10 @@
         <EntityTypeShape EntityType="SparrowDBModel.Tipo" Width="1.5" PointX="0.75" PointY="5.375" />
         <AssociationConnector Association="SparrowDBModel.FK_Producto_Medida" />
         <AssociationConnector Association="SparrowDBModel.FK_Producto_Tipo" />
+        <EntityTypeShape EntityType="SparrowDBModel.Actividad" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="SparrowDBModel.TipoActividad" Width="1.5" PointX="3" PointY="8.5" />
+        <AssociationConnector Association="SparrowDBModel.FK_Actividad_TipoActividad" />
+        <AssociationConnector Association="SparrowDBModel.FK_Actividad_Usuario" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

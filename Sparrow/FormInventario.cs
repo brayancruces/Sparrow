@@ -28,7 +28,9 @@ namespace Sparrow
 
         public void CargarDG()
         {
-            this.dataGridView1.DataSource = productoService.ListarProductos();
+            var lista = productoService.ListarProductos();
+            this.dataGridView1.DataSource = lista;
+
         }
 
         public void CargarFiltros()
@@ -63,23 +65,41 @@ namespace Sparrow
 
         private void button2_Click(object sender, EventArgs e)
         {
+            SessionHelper.accion = "Carga";
+            int length = dataGridView1.SelectedRows.Count;
+            List<int> productIDlist = new List<int>(); 
+            for (int i = 0; i < length; i++)
+            {
+                productId = Convert.ToInt32(dataGridView1.SelectedRows[i].Cells["ID"].Value);
+                productIDlist.Add(productId);
+            }
+            SessionHelper.productsIDList = productIDlist;
             FormInventarioStock formInventarioStock = new FormInventarioStock();
 
             formInventarioStock.ShowDialog();
+            CargarDG();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            SessionHelper.accion = "Descarga";
+            int length = dataGridView1.SelectedRows.Count;
+            List<int> productIDlist = new List<int>();
+            for (int i = 0; i < length; i++)
+            {
+                productId = Convert.ToInt32(dataGridView1.SelectedRows[i].Cells["ID"].Value);
+                productIDlist.Add(productId);
+            }
+            SessionHelper.productsIDList = productIDlist;
             FormInventarioStock formInventarioStock = new FormInventarioStock();
 
             formInventarioStock.ShowDialog();
+            CargarDG();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormInventarioCosto formInventarioCosto= new FormInventarioCosto();
 
-            formInventarioCosto.ShowDialog();
         }
 
         private void btnDeleteItem_Click(object sender, EventArgs e)
@@ -104,7 +124,6 @@ namespace Sparrow
             {
                 producto.alertaStock = Convert.ToDouble(tbStockAlerta.Text);
             }
-            producto.costoUnitario = 0;
             productoService.agregarProducto(producto);
             CargarDG();
             Clean();

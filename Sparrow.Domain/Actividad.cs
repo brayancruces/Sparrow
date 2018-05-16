@@ -12,16 +12,15 @@ namespace Sparrow.Domain
     using System;
     using System.Collections.Generic;
     
-    public partial class Producto
+    public partial class Actividad
     {
         public int Id { get; set; }
-        public string nombre { get; set; }
-        public int medidaId { get; set; }
-        public int tipoId { get; set; }
-        public double stock { get; set; }
-        public Nullable<double> alertaStock { get; set; }
+        public int tipoActividadId { get; set; }
+        public int usuarioId { get; set; }
+        public string nota { get; set; }
+        public System.DateTime fechaHora { get; set; }
     
-        public virtual Medida Medida { get; set; }
-        public virtual Tipo Tipo { get; set; }
+        public virtual TipoActividad TipoActividad { get; set; }
+        public virtual Usuario Usuario { get; set; }
     }
 }

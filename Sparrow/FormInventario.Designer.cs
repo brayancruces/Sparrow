@@ -30,13 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Medida = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AlertaStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CostoUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkProductoUnit = new System.Windows.Forms.CheckBox();
             this.checkProductoEl = new System.Windows.Forms.CheckBox();
@@ -64,9 +57,14 @@
             this.btnDeleteItem = new System.Windows.Forms.Button();
             this.btnEditItem = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.productoServiceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.productoServiceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Medida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AlertaStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -86,8 +84,7 @@
             this.Producto,
             this.Medida,
             this.Stock,
-            this.AlertaStock,
-            this.CostoUnitario});
+            this.AlertaStock});
             this.dataGridView1.Location = new System.Drawing.Point(17, 151);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
@@ -96,56 +93,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(588, 538);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "Id";
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Visible = false;
-            // 
-            // Tipo
-            // 
-            this.Tipo.DataPropertyName = "tipo";
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            // 
-            // Producto
-            // 
-            this.Producto.DataPropertyName = "nombre";
-            this.Producto.HeaderText = "Nombre";
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            // 
-            // Medida
-            // 
-            this.Medida.DataPropertyName = "medida";
-            this.Medida.HeaderText = "Medida";
-            this.Medida.Name = "Medida";
-            this.Medida.ReadOnly = true;
-            // 
-            // Stock
-            // 
-            this.Stock.DataPropertyName = "stock";
-            this.Stock.HeaderText = "Stock";
-            this.Stock.Name = "Stock";
-            this.Stock.ReadOnly = true;
-            // 
-            // AlertaStock
-            // 
-            this.AlertaStock.DataPropertyName = "alertaStock";
-            this.AlertaStock.HeaderText = "Alerta Stock";
-            this.AlertaStock.Name = "AlertaStock";
-            this.AlertaStock.ReadOnly = true;
-            // 
-            // CostoUnitario
-            // 
-            this.CostoUnitario.DataPropertyName = "costoUnitario";
-            this.CostoUnitario.HeaderText = "Costo Unitario";
-            this.CostoUnitario.Name = "CostoUnitario";
-            this.CostoUnitario.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -396,7 +343,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(731, 534);
+            this.button2.Location = new System.Drawing.Point(731, 548);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(168, 28);
@@ -407,7 +354,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(731, 576);
+            this.button3.Location = new System.Drawing.Point(731, 590);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(168, 28);
@@ -458,21 +405,6 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Elemento seleccionado";
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(731, 620);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(168, 28);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Modificar costo";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // productoServiceBindingSource
-            // 
-            this.productoServiceBindingSource.DataSource = typeof(Sparrow.Service.ProductoService);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(233, 86);
@@ -484,6 +416,67 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // productoServiceBindingSource
+            // 
+            this.productoServiceBindingSource.DataSource = typeof(Sparrow.Service.ProductoService);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "Id";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ID.Visible = false;
+            // 
+            // Tipo
+            // 
+            this.Tipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            this.Tipo.DataPropertyName = "tipo";
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            this.Tipo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Tipo.Width = 5;
+            // 
+            // Producto
+            // 
+            this.Producto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            this.Producto.DataPropertyName = "nombre";
+            this.Producto.HeaderText = "Nombre";
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            this.Producto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Producto.Width = 5;
+            // 
+            // Medida
+            // 
+            this.Medida.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            this.Medida.DataPropertyName = "medida";
+            this.Medida.HeaderText = "Medida";
+            this.Medida.Name = "Medida";
+            this.Medida.ReadOnly = true;
+            this.Medida.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Medida.Width = 5;
+            // 
+            // Stock
+            // 
+            this.Stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            this.Stock.DataPropertyName = "stock";
+            this.Stock.HeaderText = "Stock";
+            this.Stock.Name = "Stock";
+            this.Stock.ReadOnly = true;
+            this.Stock.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Stock.Width = 5;
+            // 
+            // AlertaStock
+            // 
+            this.AlertaStock.DataPropertyName = "alertaStock";
+            this.AlertaStock.HeaderText = "Alerta Stock";
+            this.AlertaStock.Name = "AlertaStock";
+            this.AlertaStock.ReadOnly = true;
+            this.AlertaStock.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // FormInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -493,7 +486,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnEditItem);
             this.Controls.Add(this.btnDeleteItem);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -548,15 +540,13 @@
         private System.Windows.Forms.Button btnDeleteItem;
         private System.Windows.Forms.Button btnEditItem;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.BindingSource productoServiceBindingSource;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Medida;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
         private System.Windows.Forms.DataGridViewTextBoxColumn AlertaStock;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CostoUnitario;
-        private System.Windows.Forms.Button button1;
     }
 }
