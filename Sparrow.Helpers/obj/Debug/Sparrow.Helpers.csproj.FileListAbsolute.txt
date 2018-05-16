@@ -3,3 +3,8 @@ C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\bin\Debug\Sparrow.Help
 C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.csprojResolveAssemblyReference.cache
 C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.dll
 C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.pdb
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Helpers\bin\Debug\Sparrow.Helpers.dll
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Helpers\bin\Debug\Sparrow.Helpers.pdb
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.csprojResolveAssemblyReference.cache
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.dll
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.pdb
