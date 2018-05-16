@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sparrow.Domain;
+using Sparrow.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,18 @@ namespace Sparrow
 {
     public partial class FormLog : Form
     {
+        IActividadService actividadService;
         public FormLog()
         {
+            actividadService = new ActividadService();
             InitializeComponent();
+            IEnumerable<Object> lista = actividadService.listarActividades();
+            dataGridView1.DataSource = lista;
+        }
+
+        private void FormLog_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

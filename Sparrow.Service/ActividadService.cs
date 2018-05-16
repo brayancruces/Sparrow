@@ -19,5 +19,15 @@ namespace Sparrow.Service
         {
             repository.agregarActividad(actividad);
         }
+
+        public IEnumerable<Object> listarActividades()
+        {
+            return repository.listarActividades();
+        }
+
+        public IEnumerable<Object> listarActividades(DateTime fechaInicio, DateTime fechaFin)
+        {
+            return repository.listarActividades(fechaInicio, fechaFin);
+        }
     }
 }

@@ -10,5 +10,7 @@ namespace Sparrow.Repository
     public interface IActividadRepository
     {
         void agregarActividad(Actividad actividad);
+        IEnumerable<Object> listarActividades();
+        IEnumerable<Object> listarActividades(DateTime fechaInicio, DateTime fechaFin);
     }
 }
