@@ -22,6 +22,7 @@
           <Property Name="tipoId" Type="int" Nullable="false" />
           <Property Name="stock" Type="float" Nullable="false" />
           <Property Name="alertaStock" Type="float" />
+          <Property Name="costoUnitario" Type="float" Nullable="false" />
         </EntityType>
         <EntityType Name="Rol">
           <Key>
@@ -178,6 +179,7 @@
           <Property Name="alertaStock" Type="Double" />
           <NavigationProperty Name="Medida" Relationship="SparrowDBModel.FK_Producto_Medida" FromRole="Producto" ToRole="Medida" />
           <NavigationProperty Name="Tipo" Relationship="SparrowDBModel.FK_Producto_Tipo" FromRole="Producto" ToRole="Tipo" />
+          <Property Name="costoUnitario" Type="Double" Nullable="false" />
         </EntityType>
         <EntityType Name="Tipo">
           <Key>
@@ -248,6 +250,7 @@
           <EntitySetMapping Name="Producto">
             <EntityTypeMapping TypeName="SparrowDBModel.Producto">
               <MappingFragment StoreEntitySet="Producto">
+                <ScalarProperty Name="costoUnitario" ColumnName="costoUnitario" />
                 <ScalarProperty Name="alertaStock" ColumnName="alertaStock" />
                 <ScalarProperty Name="stock" ColumnName="stock" />
                 <ScalarProperty Name="tipoId" ColumnName="tipoId" />

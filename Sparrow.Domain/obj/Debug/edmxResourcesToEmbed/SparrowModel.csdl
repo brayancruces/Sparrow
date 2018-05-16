@@ -39,5 +39,70 @@
       <End Role="Rol" EntitySet="Rol" />
       <End Role="Usuario" EntitySet="Usuario" />
     </AssociationSet>
+    <EntitySet Name="Medida" EntityType="SparrowDBModel.Medida" />
+    <EntitySet Name="Producto" EntityType="SparrowDBModel.Producto" />
+    <EntitySet Name="Tipo" EntityType="SparrowDBModel.Tipo" />
+    <AssociationSet Name="FK_Producto_Medida" Association="SparrowDBModel.FK_Producto_Medida">
+      <End Role="Medida" EntitySet="Medida" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Producto_Tipo" Association="SparrowDBModel.FK_Producto_Tipo">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="Medida">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Producto" Relationship="SparrowDBModel.FK_Producto_Medida" FromRole="Medida" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="medidaId" Type="Int32" Nullable="false" />
+    <Property Name="tipoId" Type="Int32" Nullable="false" />
+    <Property Name="stock" Type="Double" Nullable="false" />
+    <Property Name="alertaStock" Type="Double" />
+    <NavigationProperty Name="Medida" Relationship="SparrowDBModel.FK_Producto_Medida" FromRole="Producto" ToRole="Medida" />
+    <NavigationProperty Name="Tipo" Relationship="SparrowDBModel.FK_Producto_Tipo" FromRole="Producto" ToRole="Tipo" />
+    <Property Name="costoUnitario" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tipo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Producto" Relationship="SparrowDBModel.FK_Producto_Tipo" FromRole="Tipo" ToRole="Producto" />
+  </EntityType>
+  <Association Name="FK_Producto_Medida">
+    <End Type="SparrowDBModel.Medida" Role="Medida" Multiplicity="1" />
+    <End Type="SparrowDBModel.Producto" Role="Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medida">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="medidaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Producto_Tipo">
+    <End Type="SparrowDBModel.Tipo" Role="Tipo" Multiplicity="1" />
+    <End Type="SparrowDBModel.Producto" Role="Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="tipoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>
