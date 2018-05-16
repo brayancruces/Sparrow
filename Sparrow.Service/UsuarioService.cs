@@ -1,4 +1,5 @@
-﻿using Sparrow.Domain;
+﻿using System;
+using Sparrow.Domain;
 using Sparrow.Repository;
 
 namespace Sparrow.Service
@@ -10,6 +11,12 @@ namespace Sparrow.Service
         {
             repository= new UsuarioRepository();
         }
+
+        public void CerrarSesion()
+        {
+            repository.CerrarSesion();
+        }
+
         public bool IniciarSesion(string username, string password)
         {
             return repository.IniciarSesion(username, password);

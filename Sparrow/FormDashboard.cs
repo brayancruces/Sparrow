@@ -52,7 +52,7 @@ namespace Sparrow
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
-            SessionHelper.userID = null;
+            usuarioService.CerrarSesion();
             this.Close();
         }
 

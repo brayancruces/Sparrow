@@ -6,5 +6,6 @@ namespace Sparrow.Service
     {
         bool IniciarSesion(string username, string password);
         Usuario ObtenerUsuario(int ID);
+        void CerrarSesion();
     }
 }

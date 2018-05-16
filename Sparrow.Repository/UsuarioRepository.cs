@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Sparrow.Domain;
 using Sparrow.Helpers;
 
@@ -10,6 +11,11 @@ namespace Sparrow.Repository
         public UsuarioRepository()
         {
             context = new SparrowDBEntities();
+        }
+
+        public void CerrarSesion()
+        {
+            SessionHelper.userID = null;
         }
 
         public bool IniciarSesion(string username, string password)
