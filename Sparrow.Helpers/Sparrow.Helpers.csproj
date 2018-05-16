@@ -43,6 +43,12 @@
     <Compile Include="SessionHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sparrow.Domain\Sparrow.Domain.csproj">
+      <Project>{12D7C6A7-E0B1-48EF-915C-DC8AB0E14736}</Project>
+      <Name>Sparrow.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -3,3 +3,7 @@ C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\bin\Debug\Sparrow.Help
 C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.csprojResolveAssemblyReference.cache
 C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.dll
 C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\obj\Debug\Sparrow.Helpers.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\bin\Debug\Sparrow.Domain.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\bin\Debug\EntityFramework.dll
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\bin\Debug\Sparrow.Domain.pdb
+C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Helpers\bin\Debug\EntityFramework.xml

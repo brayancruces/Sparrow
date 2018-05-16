@@ -21,5 +21,34 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Medida">
+      <EntityTypeMapping TypeName="SparrowDBModel.Medida">
+        <MappingFragment StoreEntitySet="Medida">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="SparrowDBModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="costoUnitario" ColumnName="costoUnitario" />
+          <ScalarProperty Name="alertaStock" ColumnName="alertaStock" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="tipoId" ColumnName="tipoId" />
+          <ScalarProperty Name="medidaId" ColumnName="medidaId" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo">
+      <EntityTypeMapping TypeName="SparrowDBModel.Tipo">
+        <MappingFragment StoreEntitySet="Tipo">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

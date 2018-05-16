@@ -20,6 +20,7 @@ namespace Sparrow.Domain
         public int tipoId { get; set; }
         public double stock { get; set; }
         public Nullable<double> alertaStock { get; set; }
+        public double costoUnitario { get; set; }
     
         public virtual Medida Medida { get; set; }
         public virtual Tipo Tipo { get; set; }
