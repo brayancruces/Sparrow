@@ -8,3 +8,13 @@ C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\bin\Debug\EntityFramewo
 C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\obj\Debug\Sparrow.Domain.csprojResolveAssemblyReference.cache
 C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\obj\Debug\Sparrow.Domain.dll
 C:\Users\u201515078\Documents\Git\Sparrow\Sparrow.Domain\obj\Debug\Sparrow.Domain.pdb
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\bin\Debug\Sparrow.Domain.dll.config
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\bin\Debug\Sparrow.Domain.dll
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\bin\Debug\Sparrow.Domain.pdb
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\obj\Debug\Sparrow.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\obj\Debug\Sparrow.Domain.dll
+C:\Users\Desarrollo RM\Documents\WORKSPACES\UPC\8vo ciclo\APLICACIONES WEB\Trabajo Parcial\Sparrow\Sparrow.Domain\obj\Debug\Sparrow.Domain.pdb
